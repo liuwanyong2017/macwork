@@ -60,7 +60,23 @@
         "auther": "养晨",
         "img": "/macwork/liangliang.jpg",
         "src": "/macwork/liangliang.mp3"
+    },
+    {
+        "title": "爱我久久",
+        "auther": "阿牛",
+        "img": "/macwork/aiwojiujiu.jpg",
+        "src": "/macwork/aiwojiujiu.mp3"
+    },
+    {
+        "title": "我们好像在哪见过吗",
+        "auther": "杨宗纬叶培",
+        "img": "/macwork/jianguo.jpg",
+        "src": "/macwork/jianguo.mp3"
+    },
+    {
+        "title": "还有我",
+        "auther": "任我行",
+        "img": "/macwork/haiyouwo.jpg",
+        "src": "/macwork/haiyouwo.mp3"
     }
-
-
 ]
