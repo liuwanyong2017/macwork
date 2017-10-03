@@ -358,7 +358,7 @@
 
 
 
-        <div class="flip-modal  log">
+        <div class="flip-modal ">
 
             <div class="modal login">
                 <span class="fa-times fa"></span>
@@ -445,8 +445,9 @@
 
             }
             if (e.target.classList.contains('log-in')) {
+                 $('.login').style.display = "block"
                 $('.register').classList.add('close')
-                $('.login').style.display = "block"
+               
                 setTimeout(function() {
                     $('.register').style.display = "none"
                     $('.register').classList.remove('close')
