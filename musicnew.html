@@ -441,6 +441,8 @@
                 $('.register').style.display = 'block'
                 $('.error').innerText = ""
                 $('input').value =""
+                $('.register .error').innerText = ""
+                $('.register input').value =""
                 setTimeout(function() {
                     $('.login').style.display = "none"
                     $('.login').classList.remove('close')
@@ -454,6 +456,8 @@
                 $('.register').classList.add('close')
                $('.error').innerText = ""
                 $('input').value =""
+                $('.register .error').innerText = ""
+                $('.register input').value =""
                 setTimeout(function() {
                     $('.register').style.display = "none"
                     $('.register').classList.remove('close')
