@@ -432,12 +432,15 @@
              $('.login ').style.display = 'block'
             $('.flip-modal .register').style.display = 'none'
             $('.error').innerText = ""
+            $('input').value =""
         }
         $('.flip-modal').onclick = function(e) {
             e.stopPropagation()
             if (e.target.classList.contains('regist')) {
                 $('.login').classList.add('close')
                 $('.register').style.display = 'block'
+                $('.error').innerText = ""
+                $('input').value =""
                 setTimeout(function() {
                     $('.login').style.display = "none"
                     $('.login').classList.remove('close')
@@ -449,7 +452,8 @@
             if (e.target.classList.contains('log-in')) {
                  $('.login').style.display = "block"
                 $('.register').classList.add('close')
-               
+               $('.error').innerText = ""
+                $('input').value =""
                 setTimeout(function() {
                     $('.register').style.display = "none"
                     $('.register').classList.remove('close')
