@@ -431,6 +431,7 @@
             $('.flip-modal ').style.display = 'block'
              $('.login ').style.display = 'block'
             $('.flip-modal .register').style.display = 'none'
+            $('.error').innerText = ""
         }
         $('.flip-modal').onclick = function(e) {
             e.stopPropagation()
@@ -458,6 +459,7 @@
             }
             if (e.target.classList.contains('fa-times')) {
                 $('.flip-modal').style.display = 'none'
+                
             }
         }
         window.onclick = function() {
