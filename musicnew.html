@@ -402,7 +402,7 @@
                             <span class="fa fa-lock"></span>
                         </div>
                         <div class="input-field">
-                            <input type="password" name="password" placeholder="再次输入密码">
+                            <input type="password" name="nextpassword" placeholder="再次输入密码">
                             <span class="fa fa-lock"></span>
                         </div>
                         <div class="input-field">
@@ -467,11 +467,11 @@
 
         $('.login form').addEventListener('submit', function(e) {
             e.preventDefault()
-            if (!/^\w{3,8}$/.test($('.login input[name=username]').value)) {
+            if (!/^\S{3,8}$/.test($('.login input[name=username]').value)) {
                 $('.login .error').innerText = '用户名需输入3-8个字符，包括字母数字下划线'
                 return false
             }
-            if (!/^\w{6,10}$/.test($('.login input[name=password]').value)) {
+            if (!/^\S{6,10}$/.test($('.login input[name=password]').value)) {
                 $('.modal-login .error').innerText = '密码需输入6-10个字符，包括字母数字下划线'
                 return false
             }
@@ -480,19 +480,19 @@
 
         $('.register form').addEventListener('submit', function(e) {
             e.preventDefault()
-            if (!/^\w{3,8}$/.test($('.register input[name=username]').value)) {
+            if (!/^\S{3,8}$/.test($('.register input[name=username]').value)) {
                 $('.register .error').innerText = '用户名需输入3-8个字符，包括字母数字下划线'
                 return false
             }
-            if (/^hunger$|^ruoyu$/.test($('.register input[name=username]').value)) {
+            if (/^hunger$|^liuwanyong$/.test($('.register input[name=username]').value)) {
                 $('.register .error').innerText = '用户名已存在'
                 return false
             }
-            if (!/^\w{6,10}$/.test($('.register input[name=password]').value)) {
+            if (!/^\S{6,10}$/.test($('.register input[name=password]').value)) {
                 $('.register .error').innerText = '密码需输入6-10个字符，包括字母数字下划线'
                 return false
             }
-            if ($('.register input[name=password]').value !== $('.register input[name=password2]').value) {
+            if ($('.register input[name=password]').value !== $('.register input[name=nextpassword]').value) {
                 $('.register .error').innerText = '两次输入的密码不一致'
                 return false
             }
